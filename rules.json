@@ -7,7 +7,7 @@
       "redirect": { "transform": { "host": "xcancel.com" } }
     },
     "condition": {
-      "urlFilter": "||x.com/",
+      "requestDomains": ["x.com", "www.x.com", "twitter.com", "www.twitter.com"],
       "resourceTypes": ["main_frame", "sub_frame"]
     }
   },
@@ -16,58 +16,10 @@
     "priority": 1,
     "action": {
       "type": "redirect",
-      "redirect": { "transform": { "host": "xcancel.com" } }
-    },
-    "condition": {
-      "urlFilter": "||www.x.com/",
-      "resourceTypes": ["main_frame", "sub_frame"]
-    }
-  },
-  {
-    "id": 3,
-    "priority": 1,
-    "action": {
-      "type": "redirect",
-      "redirect": { "transform": { "host": "xcancel.com" } }
-    },
-    "condition": {
-      "urlFilter": "||twitter.com/",
-      "resourceTypes": ["main_frame", "sub_frame"]
-    }
-  },
-  {
-    "id": 4,
-    "priority": 1,
-    "action": {
-      "type": "redirect",
-      "redirect": { "transform": { "host": "xcancel.com" } }
-    },
-    "condition": {
-      "urlFilter": "||www.twitter.com/",
-      "resourceTypes": ["main_frame", "sub_frame"]
-    }
-  },
-  {
-    "id": 5,
-    "priority": 1,
-    "action": {
-      "type": "redirect",
       "redirect": { "transform": { "host": "explainxkcd.com" } }
     },
     "condition": {
-      "urlFilter": "||xkcd.com/",
-      "resourceTypes": ["main_frame", "sub_frame"]
-    }
-  },
-  {
-    "id": 6,
-    "priority": 1,
-    "action": {
-      "type": "redirect",
-      "redirect": { "transform": { "host": "explainxkcd.com" } }
-    },
-    "condition": {
-      "urlFilter": "||www.xkcd.com/",
+      "requestDomains": ["xkcd.com", "www.xkcd.com"],
       "resourceTypes": ["main_frame", "sub_frame"]
     }
   }
